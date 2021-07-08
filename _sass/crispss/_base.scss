@@ -215,12 +215,10 @@ pre {
  */
 
 .svg-icon {
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
     display: inline-block;
     fill: #{$grey-color};
-    padding-right: 5px;
-    vertical-align: text-top;
 }
 
 .social-media-list {
