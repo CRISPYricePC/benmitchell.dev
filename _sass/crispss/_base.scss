@@ -88,6 +88,10 @@ li {
   }
 }
 
+li::marker {
+  color: $brand-color;
+}
+
 
 
 /**
