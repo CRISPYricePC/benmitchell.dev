@@ -4,6 +4,9 @@ title: What I'm working on this summer & Goals for Year 3
 categories: blog
 ---
 
+**Update *2021/09/22*:** Modules have been updated with my new choices, footnote to the [Final Project](#final-project)
+section also added with my given project.
+
 It's the end of my 2nd year at university. That means a few things:
 
 1. I have to make some decisions for my final project in Year 3
@@ -45,11 +48,13 @@ options, but here's where it stands now:
 ### Semester 2
 
 - Parallel Computation -
-  [COMP3221](http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=202122&F=P&M=COMP-3221) (10 credits)
-- Intelligent Systems & Robotics -
-  [COMP3631](http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=202122&F=P&M=COMP-3631) (20 credits)
+  [COMP3221](http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=202122&m=COMP-3221) (10 credits)
+- Cryptography -
+  [COMP3223](http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=202122&m=COMP-3223) (10 credits)
+- Comnbinatorial Optimisation -
+  [COMP3910](http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=202122&m=COMP-3910) (10 credits)
 - Web Services & Web Data -
-  [COMP3011](http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=202122&F=P&M=COMP-3011) (10 credits)
+  [COMP3011](http://webprod3.leeds.ac.uk/catalogue/dynmodules.asp?Y=202122&m=COMP-3011) (10 credits)
 
 ### Final Project
 
@@ -64,6 +69,11 @@ action that was performed. My 3rd and 4th choices are related to procedural gene
 but didn't put so high on the list of preferences purely down to the fact that I know very little about computer
 graphics at the moment, and would prefer to wait until I have taken the course in 1st semester to understand how
 I could approach this project.
+
+**Update *2021/09/22*:** I have been given my 3rd choice for this project, sadly. It involves procedurally generating
+a cityscape, which should be a lot of fun. To prepare for this, I've been learning some graphics programming over the
+summer, but I find some of the aspects to be very challenging, hopefully the Computer Graphics module I've enrolled to
+should help alleviate some of these struggles. Overall, I'm very excited for this project.
 
 ## Summer Projects
 
