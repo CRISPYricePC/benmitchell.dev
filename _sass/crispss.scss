@@ -46,6 +46,25 @@ $on-laptop:        800px !default;
   font-size: $base-font-size * $ratio;
 }
 
+// Spoilers
+.spoiler {
+  color: $grey-color;
+  background-color: $grey-color;
+  border-radius: 3px;
+  user-select: none;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
+.spoiler:hover {
+  cursor: pointer;
+}
+
+#markdown-toc .spoiler:hover, .spoiler-hover:hover, .spoiler-shown {
+  color: $grey-color-dark;
+  background-color: $grey-color-light;
+}
+
 // Import partials.
 @import
   "crispss/base",
