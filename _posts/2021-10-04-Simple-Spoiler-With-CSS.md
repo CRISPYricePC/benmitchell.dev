@@ -4,21 +4,15 @@ title: Simple HTML+CSS+JS Spoiler
 categories: blog
 ---
 
-I recently discovered that Markdown (what I use to write this blog) doesn't support the spoiler syntax commonly seen on
-Reddit & Discord (`>!It looks like this!<`). But since Markdown *does* support inline HTML, I thought I'd set out and
-create my own.
+I recently discovered that Markdown (what I use to write this blog) doesn't support the spoiler syntax commonly seen on Reddit & Discord (`>!It looks like this!<`). But since Markdown *does* support inline HTML, I thought I'd set out and create my own.
 
-My site uses SASS/SCSS for its CSS but all of the CSS I will show is vanilla so it shouldn't matter. Firstly, here's
-what the spoiler looks like:
+My site uses SASS/SCSS for its CSS, but all the CSS I will show is vanilla, so it shouldn't matter. Firstly, here's what the spoiler looks like:
 
 <p class="spoiler">Wow look at me!</p>
 
-If you click on the grey box, it will show the text. You can also use inline spoilers like this: <span class="spoiler">
-Now it's inline!</span>
+If you click on the grey box, it will show the text. You can also use inline spoilers like this: <span class="spoiler"> Now it's inline!</span>
 
-I'll also show you how to make spoilers reveal themselves on hover, using <span class="spoiler spoiler-hover">the
-spoiler-hover class</span>, but this is less accessible for mobile users. It does however, have the advantage of not
-requiring any JavaScript
+I'll also show you how to make spoilers reveal themselves on hover, using <span class="spoiler spoiler-hover">the spoiler-hover class</span>, but this is less accessible for mobile users. It does, however, have the advantage of not requiring any JavaScript
 
 <!--more-->
 
@@ -66,8 +60,7 @@ And finally, an inline, <span class="spoiler spoiler-hover">hover spoiler</span>
 
 ## JavaScript for Clickable Spoilers
 
-The final step to getting this to work is to add a little bit of JS to the page, so remember to load the JS using the
-`<script>` tag:
+The final step to getting this to work is to add a little bit of JS to the page, so remember to load the JS using the `<script>` tag:
 
 ```html
 <head>
@@ -78,14 +71,15 @@ The final step to getting this to work is to add a little bit of JS to the page,
 And in `script.js` (this example doesn't use JQuery):
 
 ```js
-document.addEventListener("DOMContentLoaded", function() {  // Or $(document).ready() in JQuery
-    document.querySelectorAll(".spoiler").forEach(item => { // For all elements with the spoiler class
-        item.addEventListener("click", function() {         // On Click
-            if (this.classList.contains("spoiler-shown"))
-                this.classList.remove("spoiler-shown")      // Remove the spoiler-shown class if it's shown
-            else
-                this.classList.add("spoiler-shown")         // Add the spoiler-shown class if it's hidden
-        }) // item.addEventListener
-    }) // document.querySelectorAll
-}, false) // document.addEventListener
+document.addEventListener("DOMContentLoaded", () => { // When DOM is ready
+  document.querySelectorAll(".spoiler")               // Select all .spoiler elements
+    .forEach(item => {                                // For each .spoiler element
+      item.onclick = () => {                          // When clicked
+        if (item.classList.contains("spoiler-shown")) // If the spoiler is shown
+          item.classList.remove("spoiler-shown");     // Hide it
+        else                                          // Otherwise
+          item.classList.add("spoiler-shown");        // Show it
+      };
+    });
+}, false);
 ```
